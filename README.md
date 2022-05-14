@@ -30,3 +30,8 @@
 - As a member user, I can like/unlike blogs so that I can interact with the content.
 - As a member user, I can leave comments on a blog, so that I can be involved with the conversation.
 
+## Database Models
+
+[Table for post model database](./assets/wireframes/post-model.pdf)
+
+[Table for comment model database](./assets/wireframes/comments-model.pdf)
