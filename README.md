@@ -35,3 +35,20 @@
 [Table for post model database](./assets/wireframes/post-model.pdf)
 
 [Table for comment model database](./assets/wireframes/comments-model.pdf)
+
+## Programmes Used
+
+- Balsamiq
+    - For the wireframes
+- Lucid app
+    - For the flowchart
+- Word
+    - For the Database models
+- Git 
+    - For version control, committing and pushing to GitHub
+- GitHub
+    - For storing the repository, files and images pushed from Gitpod
+- Gitpod
+    - IDE used to code my project
+- Heroku
+    - Used to deploy the application
