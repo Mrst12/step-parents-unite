@@ -19,3 +19,15 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
+
+    class Meta:
+        """ order by created on """
+        ordering = ['-created_on']
+
+    def __str__(self):
+        """ return the title """
+        return self.title
+
+    def number_of_likes(self):
+        """ number of likes """
+        return self.likes.count()
