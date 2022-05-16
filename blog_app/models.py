@@ -31,3 +31,25 @@ class Post(models.Model):
     def number_of_likes(self):
         """ number of likes """
         return self.likes.count()
+
+
+class Comment(models.Model):
+    """ Comments model """
+
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name='comments')
+    author = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        """ order by created on"""
+
+        ordering = ['created_on']
+
+    def __str__(self):
+        """ return the content and author """
+
+        return f"Comment {self.body} by {self.name}"
