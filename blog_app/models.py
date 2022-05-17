@@ -52,4 +52,4 @@ class Comment(models.Model):
     def __str__(self):
         """ return the content and author """
 
-        return f"Comment {self.body} by {self.name}"
+        return f"Comment {self.body} by {self.author}"
