@@ -8,4 +8,6 @@ from .models import Post
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
     """ Use summernote for our content """
+
+    prepopulated_fields = {'slug': ('title' ,)}
     summernote_fields = ('content')
