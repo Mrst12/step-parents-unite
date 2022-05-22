@@ -6,3 +6,26 @@
 .footer {
     background-color: #c8b6ff;
 }
+
+body {
+    background-color: #ffd6ff;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.main-bg {
+    background-color:#ffd6ff;
+    margin: 20px;
+    width: 100%;
+}
+/* Home page */
+h1 {
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-msg {
+    text-align: center;
+    margin: 100px 20px 20px 20px;
+    line-height: 30px;
+}
