@@ -3,6 +3,31 @@
     padding: 20px;
 }
 
+.nav-link {
+    color: black;
+}
+
+.logo {
+    color: blueviolet;
+}
+
+/*media query for navbar*/
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right:10px;
+        padding-left:10px;
+
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+}
+
 .footer {
     background-color: #c8b6ff;
 }
