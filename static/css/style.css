@@ -1,6 +1,6 @@
 .navbar {
     background-color: #c8b6ff;
-    margin: 0%;
+    padding: 20px;
 }
 
 .footer {
@@ -14,7 +14,6 @@ body {
 
 .main-bg {
     background-color:#ffd6ff;
-    margin: 20px;
     width: 100%;
 }
 /* Home page */
@@ -32,7 +31,7 @@ h1 {
 
 .btn-signup {
     background-color: #bbd0ff;
-    margin: 20px;
+    margin: 50px 20px;
     color:black;
     border-radius: 10px;
 }
