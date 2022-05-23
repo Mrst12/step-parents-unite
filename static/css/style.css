@@ -29,3 +29,18 @@ h1 {
     margin: 100px 20px 20px 20px;
     line-height: 30px;
 }
+
+.btn-signup {
+    background-color: #bbd0ff;
+    margin: 20px;
+    color:black;
+    border-radius: 10px;
+}
+
+.btn-signup:hover {
+    background-color: #b8c0ff;
+}
+
+.btn-link {
+    text-decoration: none;
+}
