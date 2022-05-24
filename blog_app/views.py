@@ -20,7 +20,7 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-class PostDetail(View):
+class BlogDetail(View):
     """ View for the complete post"""
 
     def get(self, request, slug, *args, **kwargs):
