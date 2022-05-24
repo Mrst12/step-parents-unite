@@ -40,6 +40,5 @@ class BlogDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm()
             },
         )
