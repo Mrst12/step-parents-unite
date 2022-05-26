@@ -23,6 +23,11 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
+def profile(request):
+    """ profile page view """
+    return render(request, 'profile.html')
+
+
 class BlogDetail(View):
     """ View for the complete post"""
 
