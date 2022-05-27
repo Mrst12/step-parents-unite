@@ -43,15 +43,21 @@ h1 {
     margin-bottom: 20px;
 }
 
-.intro-msg {
+.intro-msg,
+.profile {
     text-align: center;
     margin: 100px 20px 20px 20px;
     line-height: 30px;
+    font-size: 20px;
+}
+
+.profile p {
+   
 }
 
 .btn-signup {
     background-color: #bbd0ff;
-    margin: 50px 20px;
+    margin: 20px 20px;
     color:black;
     border-radius: 10px;
 }
@@ -94,4 +100,11 @@ a.post-link:hover {
     .card {
         margin: 100px 10px 0 10px;
     }
+}
+
+/* profile-page */
+
+.profile-item {
+    list-style: none;
+    text-align: center;
 }
