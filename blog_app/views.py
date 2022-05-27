@@ -1,9 +1,10 @@
 """ Views file for the blogs """
 
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+from django.contrib.auth.models import User
 from .models import Post
 from .forms import CommentForm
 
@@ -26,6 +27,30 @@ class PostList(generic.ListView):
 def profile(request):
     """ profile page view """
     return render(request, 'profile.html')
+
+
+def publish(request):
+    """ Publish a blog if authenticated user """
+    if request.method == 'POST':
+        blog_form = BlogForm(request.POST, request.FILES)
+
+        if blog_form.is_valid():
+            form = blog_form.save(commit=False)
+            form.author = User.objects.get(username=request.user.username)
+            form.slug = form.title.replace(" ", "-")
+            messages.success(
+                request, 'Your blog has been submitted for approval'
+            )
+            form.save()
+            return redirect('my_blogs')
+
+        blog_form = BlogForm()
+        context = {'blog_form': blog_form}
+
+        return render(
+            request,
+            'publish.html', context
+        )
 
 
 class BlogDetail(View):
