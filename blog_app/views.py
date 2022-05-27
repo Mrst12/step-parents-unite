@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.models import User
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, BlogForm
 
 
 def index(request):
