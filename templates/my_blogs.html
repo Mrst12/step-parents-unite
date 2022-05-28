@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid my-blogs-container mx-auto">
+    <h3 class="title">My Blogs:</h3>
+
+    {% for post in posts %}
+        <div class="card my-list">
+            {% if post.approved %}
+            <h5 class="card-header status">Published <i class="fas fa-check"></i></h5>
+            {% else %}
+            <h5 class="card-header status">Pending Approval</h5>
+            {% endif %}
+            <div class="card-body my-list-box">
+                {% if post.approved %}
+                <h5 class="card-title"><a href="{% url 'blog_details' post.slug %}" class="published">{{ post.title }}</a>
+                </h5>
+                {% else %}
+                <h5 class="card-title list-title">{{ post.title }}</h5>
+                {% endif %}
+                <p class="card-text">{{ post.excerpt }}</p>
+                <p class="card-text my-blog-date">{{ post.created_on }}</p>
+                <a class="btn btn-warning btn-lg" href="#">Edit Blog</a>
+                <a class="btn btn-danger btn-lg" href="#">Delete</a>
+            </div>
+        </div>
+
+        {% empty %}
+        <p>You have no blogs</p>
+        <a class="btn btn-signup btn-lg profile-item-link" href="{% url 'publish' %}">Publish a blog</a>
+    {% endfor %}
+</div>
+
+
+{%  endblock%}
