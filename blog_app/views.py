@@ -47,6 +47,14 @@ def publish(request):
     blog_form = BlogForm()
     context = {'blog_form': blog_form}
 
+
+def my_blogs(request):
+    """ authenticated user can view their own blogs """
+
+    logged_in_user = request.user
+    logged_in_user_posts = Post.objects.filter(author=logged_in_user)
+    return render(request, 'my_blogs.html', {'posts': logged_in_user_posts})
+
     return render(
         request,
         'publish.html', context
