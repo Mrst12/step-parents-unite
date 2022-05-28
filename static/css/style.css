@@ -104,3 +104,12 @@ a.post-link:hover {
     list-style: none;
     text-align: center;
 }
+
+/* publish page */
+
+.publish-form-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+
+}

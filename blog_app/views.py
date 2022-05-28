@@ -44,13 +44,13 @@ def publish(request):
             form.save()
             return redirect('my_blogs')
 
-        blog_form = BlogForm()
-        context = {'blog_form': blog_form}
+    blog_form = BlogForm()
+    context = {'blog_form': blog_form}
 
-        return render(
-            request,
-            'publish.html', context
-        )
+    return render(
+        request,
+        'publish.html', context
+    )
 
 
 class BlogDetail(View):

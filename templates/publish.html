@@ -12,7 +12,7 @@
     {% if user.is_authenticated %}
     <h3 class="title">Publish your blog</h3>
     <p>Publishing as: {{ user.username }}</p>
-    <form method="POST" action="{% url 'publish' %}" enctype="multipart/form-data">
+    <form method="POST" action="{% url 'publish' %}">
         {{ blog_form | crispy }}
         {% csrf_token %}
         <button type="submit" class="btn btn-signup btn-lg">Publish</button>
