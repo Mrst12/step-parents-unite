@@ -11,9 +11,14 @@ class PostAdmin(SummernoteModelAdmin):
 
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('status', 'created_on')
-    list_display = ('title', 'slug', 'status', 'created_on')
+    list_display = ('title', 'slug', 'status', 'created_on', 'approved')
     search_fields = ['title', 'content']
     summernote_fields = ('content')
+    actions = ['approve_blogs']
+
+    def approve_blogs(self, request, queryset):
+        """ method for approving blogs"""
+        queryset.update(approved=True)
 
 
 @admin.register(Comment)
