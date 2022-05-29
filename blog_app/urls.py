@@ -11,4 +11,5 @@ urlpatterns = [
     path('profile', views.profile, name='profile'),
     path('publish', views.publish, name='publish'),
     path('my_blogs', views.my_blogs, name='my_blogs'),
+    path('edit/<post_id>', views.edit_post, name='edit'),
 ]
