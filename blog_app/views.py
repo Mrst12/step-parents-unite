@@ -60,6 +60,25 @@ def my_blogs(request):
     return render(request, 'my_blogs.html', {'posts': logged_in_user_posts})
 
 
+def edit_post(request, post_id):
+    """ users that are authenticated can edit their own blog """
+    post = get_object_or_404(Post, id=post_id)
+    if request.method == 'POST':
+        blog_form = BlogForm(request.POST, instance=post)
+        if blog_form.is_valid():
+            form = blog_form.save(commit=False)
+            form.approved = False
+            messages.success(
+                request,
+                'Updated blog has been successfully submitted for approval'
+            )
+            form.save()
+            return redirect('my_blogs')
+    blog_form = BlogForm(instance=post)
+    context = {'blog_form': blog_form}
+    return render(request, 'edit_blog.html', context)
+
+
 class BlogDetail(View):
     """ View for the complete post"""
 
