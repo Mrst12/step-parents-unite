@@ -79,6 +79,14 @@ def edit_post(request, post_id):
     return render(request, 'edit_blog.html', context)
 
 
+def delete_post(request, post_id):
+    """ Authenticated users can delete their own blogs"""
+    post = get_object_or_404(Post, id=post_id)
+    post.delete()
+    messages.success(request, 'Blog deleted!')
+    return redirect('my_blogs')
+
+
 class BlogDetail(View):
     """ View for the complete post"""
 
