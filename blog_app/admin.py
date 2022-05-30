@@ -18,7 +18,7 @@ class PostAdmin(SummernoteModelAdmin):
 
     def approve_blogs(self, request, queryset):
         """ method for approving blogs"""
-        queryset.update(approved=True)
+        queryset.update(status=1, approved=True)
 
 
 @admin.register(Comment)

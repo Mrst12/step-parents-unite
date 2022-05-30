@@ -17,4 +17,4 @@ class BlogForm(forms.ModelForm):
     class Meta:
         """ use post model"""
         model = Post
-        fields = ('title', 'content', 'excerpt', 'status',)
+        fields = ('title', 'content', 'excerpt',)
