@@ -42,7 +42,7 @@ def publish(request):
                 request, 'Your blog has been submitted for approval'
             )
             form.save()
-            return redirect('my_blogs')
+        return redirect('my_blogs')
 
     blog_form = BlogForm()
     context = {'blog_form': blog_form}
