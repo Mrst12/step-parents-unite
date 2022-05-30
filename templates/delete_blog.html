@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid delete-container">
+    <h3>Delete {{ post.title }}</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{ post.title }}"?</p>
+        <input type="submit" value="confirm">
+    </form>
+</div>
+
+{% endblock %}
