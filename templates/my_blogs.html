@@ -22,9 +22,30 @@
                 <p class="card-text">{{ post.excerpt }}</p>
                 <p class="card-text my-blog-date">{{ post.created_on }}</p>
                 <a class="btn btn-warning btn-lg" href="edit/{{ post.id }}">Edit Blog</a>
-                <a class="btn btn-danger btn-lg" href="#">Delete</a>
+                <button class="btn btn-danger btn-lg" data-bs-toggle="modal"
+                data-bs-target="#deleteModal{{ post.id }}">Delete</button>
             </div>
         </div>
+
+         <!-- Modal -->
+         <div class="modal fade" id="deleteModal{{ post.id }}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content delete-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Delete</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete "{{ post.title }}"?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <a class="btn btn-danger" href="delete/{{ post.id }}">Delete</a>
+                    </div>
+                </div>
+            </div>
 
         {% empty %}
         <p>You have no blogs</p>
