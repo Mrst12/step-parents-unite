@@ -138,3 +138,9 @@ a.post-link:hover {
 .title {
     margin-left: 20px;
 }
+
+/*pagination*/
+.page-link {
+    background-color: #ffd6ff;
+    color:#240046;
+}
