@@ -47,10 +47,13 @@ body {
     width: 100%;
 }
 /* Home page */
+.main-title {
+    margin-bottom: 20px;
+}
 h1 {
     font-family: 'Monserrat', sans-serif;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .intro-msg,
