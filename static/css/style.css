@@ -144,3 +144,10 @@ a.post-link:hover {
     background-color: #ffd6ff;
     color:#240046;
 }
+
+/*media query for the blog page*/
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 30%;
+    }
+}
