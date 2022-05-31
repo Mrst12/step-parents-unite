@@ -3,11 +3,15 @@
 }
 
 .nav-link {
-    color: black;
+    color: #240046;
+}
+
+.nav-link:hover {
+    color: #fff;
 }
 
 .logo {
-    color: blueviolet;
+    color: #240046;
 }
 
 /*media query for navbar*/
@@ -54,12 +58,13 @@ h1 {
 .btn-signup {
     background-color: #bbd0ff;
     margin: 20px 20px;
-    color:black;
+    color:#240046;
     border-radius: 10px;
 }
 
 .btn-signup:hover {
     background-color: #b8c0ff;
+    color: #fff;
 }
 
 .btn-link {
@@ -68,7 +73,7 @@ h1 {
 
 /*blog page */
 .author {
-    color: black;
+    color: #240046;
 }
 
 .card {
@@ -82,7 +87,7 @@ h1 {
 }
 
 a.post-link {
-    color:black;
+    color:#240046;
     text-decoration: none;
 }
 
