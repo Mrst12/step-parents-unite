@@ -80,6 +80,9 @@ h1 {
     text-decoration: none;
 }
 
+.btn-lg {
+    margin: 10px;
+}
 /*blog page */
 .author {
     color: #240046;
