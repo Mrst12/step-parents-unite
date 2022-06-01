@@ -16,7 +16,7 @@
 <div class="container post-box" >
     <div class="row">
         <div class="col card mb-4  mt-3 left top post-box-content">
-            <div class="card-body">
+            <div class="card-body post-content">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <div class="card-text ">
@@ -43,15 +43,15 @@
                             </form>
                             {% else %}
 
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span><i class="far fa-heart"></i></span>
                             {% endif %}
-                            <span class="text-secondary"> {{ post.number_of_likes }}</span>
+                            <span> {{ post.number_of_likes }}</span>
                         </strong>
                         
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <strong><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
                             {{ total_comments }}
                         </strong>
@@ -76,7 +76,7 @@
                     <p class="font-weight-bold">
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
                         {{ comment.author }}
-                        <span class=" text-muted font-weight-normal">
+                        <span class="font-weight-normal">
                             <!-- The comment's created date goes here -->
                             {{ comment.created_on }}
                         </span> wrote:
