@@ -152,7 +152,7 @@ a.post-link:hover {
 
 /*bog-detail page*/
 .post-content {
-    height: 100px;
+    height: 150px;
 }
 
 .card-text {
@@ -162,3 +162,7 @@ a.post-link:hover {
     background-color: #bbd0ff;
     border: 1px solid #b8c0ff;
 }
+
+/*media query for blog detail page */
+
+@media screen and
