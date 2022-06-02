@@ -167,3 +167,10 @@ a.post-link:hover {
 .card-header {
     background-color: #fff;
 }
+
+a.published {
+    color: #240046;
+}
+a.published:hover {
+    color: blueviolet;
+}
