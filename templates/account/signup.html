@@ -10,12 +10,12 @@
         <div class="col-md-8 mt-3 offset-md-2">
             <h3>{% trans "Sign Up" %}</h3>
 
-            <p>{% blocktrans %}Welcome back Step Parents Unite blog space. Do you already have an account? Then please <a
+            <p class="sign-in">{% blocktrans %}Welcome to Step Parents Unite blog space. Do you already have an account? Then please <a
                     class="link" href="{{ login_url }}">sign in</a> instead.{% endblocktrans %}</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+        <div class="col-md-8 sign-in offset-md-2">
             <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
