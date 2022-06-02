@@ -176,6 +176,7 @@ a.link {
 
 a.published {
     color: #240046;
+    text-decoration: none;
 }
 a.published:hover {
     color: blueviolet;
