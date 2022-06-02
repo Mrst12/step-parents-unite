@@ -14,6 +14,9 @@
     color: #240046;
 }
 
+.nav-link.btn {
+    border: none;
+}
 /*media query for navbar*/
 @media screen and (max-width: 992px) {
     .navbar-nav {
@@ -173,4 +176,9 @@ a.published {
 }
 a.published:hover {
     color: blueviolet;
+}
+
+/*logout modal*/
+.close {
+    border: none;
 }
