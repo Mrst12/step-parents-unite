@@ -158,7 +158,6 @@ a.post-link:hover {
 }
 .comment {
     background-color: #bbd0ff;
-    border: 1px solid #b8c0ff;
 }
 
 /*blog detail page */
@@ -185,6 +184,7 @@ a.published:hover {
 
 /* sign in page */
 
-.sign-in {
+.sign-in,
+.sign-out {
     margin-top: 100px;
 }
