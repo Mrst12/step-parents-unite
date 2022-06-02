@@ -189,7 +189,6 @@ a.published:hover {
 
 /* sign in page */
 
-.sign-in,
-.sign-out {
+.sign-in {
     margin-top: 100px;
 }
