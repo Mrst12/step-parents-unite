@@ -1,7 +1,6 @@
 """ Unit testing for Views """
 
 from django.test import TestCase
-from .models import Post
 
 
 class TestIndexViews(TestCase):
@@ -11,6 +10,7 @@ class TestIndexViews(TestCase):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
+
 
 class TestPostListViews(TestCase):
     """ Unit test blog page view """
@@ -30,7 +30,6 @@ class TestProfileViews(TestCase):
         self.assertTemplateUsed(response, 'profile.html')
 
 
-
 class TestPublishBlogViews(TestCase):
     """ unit test for publish page """
     def test_can_publish_blog(self):
@@ -38,4 +37,3 @@ class TestPublishBlogViews(TestCase):
         response = self.client.get('/publish')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'publish.html')
-
