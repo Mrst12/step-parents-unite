@@ -30,3 +30,12 @@ class TestProfileViews(TestCase):
         self.assertTemplateUsed(response, 'profile.html')
 
 
+
+class TestPublishBlogViews(TestCase):
+    """ unit test for publish page """
+    def test_can_publish_blog(self):
+        """ function """
+        response = self.client.get('/publish')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'publish.html')
+
