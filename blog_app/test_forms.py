@@ -28,4 +28,18 @@ class TestBlogForm(TestCase):
             form.Meta.fields, ('title', 'content', 'excerpt')
         )
 
+class TestCommentForm(TestCase):
+    """  Unit test for comment form"""
+    def test_post_body_is_required(self):
+        """ title function """
+        form = CommentForm(({'body': ''}))
+        self.assertFalse(form.is_valid())
+        self.assertIn('body', form.errors.keys())
+        self.assertEqual(form.errors['body'][0], 'This field is required.')
 
+    def test_fields_are_explicit_in_form_metaclass(self):
+        """ fields function """
+        form = CommentForm()
+        self.assertEqual(
+            form.Meta.fields, ('body',)
+        )
