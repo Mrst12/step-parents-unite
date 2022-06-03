@@ -20,4 +20,12 @@ class TestBlogForm(TestCase):
         self.assertIn('content', form.errors.keys())
         self.assertEqual(form.errors['content'][0], 'This field is required.')
 
+    
+    def test_fields_are_explicit_in_form_metaclass(self):
+        """ fields function """
+        form = BlogForm()
+        self.assertEqual(
+            form.Meta.fields, ('title', 'content', 'excerpt')
+        )
+
 
