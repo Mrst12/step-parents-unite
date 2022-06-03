@@ -20,3 +20,13 @@ class TestPostListViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog_page.html')
 
+
+class TestProfileViews(TestCase):
+    """ unit test for profile page """
+    def test_profile_page(self):
+        """ function """
+        response = self.client.get('/profile')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'profile.html')
+
+
