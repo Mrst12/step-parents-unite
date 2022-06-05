@@ -31,23 +31,12 @@ more difficult so I was hoping this page could bridge this gap.
 - [Technologies used](#technologies-used)
     - [Frameworks, Libraries & Tools Used](#frameworks-libraries--tools-used)
 - [Testing](#testing)
+- [Bugs](#bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
     - [Acknowledgements](#acknowledgements)
 
-
-
-
-
-## Wireframes
-[wireframes for project](./assets/wireframes/step-parents-unite.pdf)
-
-## Flowcharts
-[Admin flowcharts for project](./assets/wireframes/admin-chart.pdf)
-
-[User flowcharts for project](./assets/wireframes/user-flowchart.pdf)
-
-## User Stories
+## User Experience
 
 ### Admin
 
@@ -69,14 +58,35 @@ more difficult so I was hoping this page could bridge this gap.
 - As a member user, I can like/unlike blogs so that I can interact with the content.
 - As a member user, I can leave comments on a blog, so that I can be involved with the conversation.
 
-## Database Models
+## Design
+
+### Wireframes
+[wireframes for project](./assets/wireframes/step-parents-unite.pdf)
+
+### Flowcharts
+[Admin flowcharts for project](./assets/wireframes/admin-chart.pdf)
+
+[User flowcharts for project](./assets/wireframes/user-flowchart.pdf)
+
+### Database Models
 
 [Table for post model database](./assets/wireframes/post-model.pdf)
 
 [Table for comment model database](./assets/wireframes/comments-model.pdf)
 
-## Programmes Used
+### Colour Scheme
 
+### Typography
+
+## Features
+
+### Existing Features
+
+### Future Features
+
+## Technologies used
+
+### Frameworks, Libraries & Tools Used
 - Balsamiq
     - For the wireframes
 - Lucid app
@@ -91,3 +101,13 @@ more difficult so I was hoping this page could bridge this gap.
     - IDE used to code my project
 - Heroku
     - Used to deploy the application
+
+## Testing
+
+## Bugs
+
+## Deployment
+
+## Credits
+
+### Acknowledgements
