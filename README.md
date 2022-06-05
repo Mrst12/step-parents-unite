@@ -14,6 +14,27 @@ more difficult so I was hoping this page could bridge this gap.
 
 *We all need moral support*
 
+## Contents 
+- [User Experience](#user-experience)
+    - [Admin](#admin)
+    - [General User](#general-user)
+    - [Member User](#member-user)
+- [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Flowcharts](#flowcharts)
+    - [Database models](#database-models)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+- [Technologies used](#technologies-used)
+    - [Frameworks, Libraries & Tools Used](#frameworks-libraries--tools-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    - [Acknowledgements](#acknowledgements)
+
 
 
 
