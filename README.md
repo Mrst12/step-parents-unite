@@ -37,6 +37,9 @@ more difficult so I was hoping this page could bridge this gap.
     - [Acknowledgements](#acknowledgements)
 
 ## User Experience
+- I designed the site with the design thinking approach, with only neccessary content/information.
+- Users can look around the site easily without being bombarded with lots of clutter.
+- My User stories can be found [here](https://github.com/Mrst12/step-parents-unite/projects/2)
 
 ### Admin
 
@@ -59,6 +62,8 @@ more difficult so I was hoping this page could bridge this gap.
 - As a member user, I can leave comments on a blog, so that I can be involved with the conversation.
 
 ## Design
+- I have used an agile approach to the project my development board for the project can be viewed 
+[here](https://github.com/Mrst12/step-parents-unite/projects/1)
 
 ### Wireframes
 [wireframes for project](./assets/wireframes/step-parents-unite.pdf)
@@ -87,6 +92,8 @@ was better for accessibility.
 - I used Monserrat for the main title, and Catamaran for the rest of the text.
 
 ## Features
+
+- Registered users will have full CRUD functionality, They can **C**reate, **R**ead, **U**pdate, and **D**elete blogs.
 
 ### Existing Features
 - **Home Page**
