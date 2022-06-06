@@ -276,6 +276,83 @@ was better for accessibility.
     
 ## Deployment
 
+- Initial deployment was made early on in the process of making this project to avoid any unforseen errors when deploying and causing stress if time was limited.
+
+### Deployment through Heroku
+1. Sign up / Log in to Heroku
+
+2. From the main Heroku Dashboard page select 'New' and then 'Create New App'
+
+3. Give the project a name and select a suitable region, then select create app. The name for the app must be unique. This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
+
+4. Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database
+
+5. Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
+
+6. Within the django app repository create a new file called env.py - within this file import the os library and set the environment variable for the DATABASE_URL pasting in the address copied from Heroku. The line should appear as os.environ["DATABASE_URL"]= "Paste the link in here"
+
+7. Add a secret key to the app using os.environ["SECRET_KEY"] = "your secret key goes here"
+Add the secret key just created to the Heroku Config Vars as SECRET_KEY for the KEY value and the secret key value you created as the VALUE
+
+8. In the settings.py file within the django app, import Path from pathlib, import os and import dj_database_url
+insert the line if os.path.isfile("env.py"): import env
+remove the insecure secret key that django has in the settings file by default and replace it with SECRET_KEY = os.environ.get('SECRET_KEY')
+replace the databases section with DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))} ensure the correct indentation for python is used.
+
+9. In the terminal migrate the models over to the new database connection
+Navigate in a browser to cloudinary, log in, or create an account and log in.
+
+10. From the dashboard - copy the CLOUDINARY_URL to the clipboard
+in the env.py file created earlier - add os.environ["CLOUDINARY_URL"] = "paste in the Url copied to the clipboard here"
+
+11. In Heroku, add the CLOUDINARY_URL and value copied to the clipboard to the config vars
+Also add the KEY - DISABLE_COLLECTSTATIC with the Value - 1 to the config vars
+this key value pair must be removed prior to final deployment
+
+12. Add the cloudinary libraries to the list of installed apps, the order they are inserted is important, 'cloudinary_storage' goes above 'django.contrib.staticfiles' and 'cloudinary' goes below it.
+
+13. In the Settings.py file - add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
+Link the file to the templates directory in Heroku TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
+14. Change the templates directory to TEMPLATES_DIR - 'DIRS': [TEMPLATES_DIR]
+
+15. Add Heroku to the ALLOWED_HOSTS list the format will be the app name given in Heroku when creating the app followed by .herokuapp.com
+
+16. In your code editor, create three new top level folders, media, static, templates
+
+17. Create a new file on the top level directory - Procfile
+
+18. Within the Procfile add the code - web: guincorn PROJECT_NAME.wsgi
+
+19. In the terminal, add the changed files, commit and push to GitHub
+
+20. In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors.
+
+Heroku will now build the app for you. Once it has completed the build process you will see a 'Your App Was Successfully Deployed' message and a link to the app to visit the live site.
+
+### Forking the Gihub Repository
+
+1. By forking the GitHub Repository, you will be able to make a copy of the original repository on your own GitHub account, allowing you to view and/or make changes without affecting the original repository by using the following steps:
+
+2. Log in to GitHub and locate the GitHub Repository At the top of the Repository (not top of page), just above the "Settings" button on the menu, locate the "Fork" button. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the GitHub Repository Under the repository name.
+
+2. Click "Clone or download". 
+
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link. 
+
+4. Open Git Bash.  
+
+5. Change the current working directory to the location where you want the cloned directory to be made. 
+
+6. Type git clone, and then paste the URL you copied in Step 3.
+
+
+
+
 
 ## Credits
 
