@@ -203,6 +203,32 @@ was better for accessibility.
     - IDE used to code my project
 - Heroku
     - Used to deploy the application
+- Bootstrap
+    - Used for grids, layout, columns, cards and forms structure
+- Django
+    - Used for django frameworks to manage the apps
+- Google Fonts
+    - Used for the fonts on the site
+- Fontawesome
+    - Used for the additional icons
+- Coolors
+    - Used for the colour scheme on the site
+- PostgreSQL
+    - Used for the database storage of the models
+- Cloudinary
+    - Used for image and static files
+- AmIResponsive
+    - used for the responsiveness of the site
+- Lighthouse
+    - Used for testing site functionality
+- W3C Markup Validation Service
+    - Used for HTML testing
+- W3C CSS Validation Service
+    - Used for CSS testing
+- PEP8
+    - Used for Python testing files
+    
+
 
 ## Testing
 
