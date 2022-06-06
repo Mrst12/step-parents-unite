@@ -32,6 +32,7 @@ more difficult so I was hoping this page could bridge this gap.
     - [Frameworks, Libraries & Tools Used](#frameworks-libraries--tools-used)
 - [Testing](#testing)
 - [ Fixed Bugs](#fixed-bugs)
+- [Known Bugs](#known-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
     - [Acknowledgements](#acknowledgements)
@@ -256,6 +257,14 @@ was better for accessibility.
 - Trailing whitespace
     - When doing the PEP8 testing on my views.py file I found [this error](./assets/documentation/pep8-views.py-bug.png)
         - Did a google search for the problem and came up with [this article](stackoverflow.com/questions/21410075/what-is-trailing-whitespace-and-how-can-i-handle-this) implemented the changes and the error was gone.
+
+## Known bugs
+- Page layout
+    - On tablet devices I originally wanted 2 cards per row however I was getting
+     ![page-layout](./assets/documentation/page-layout.png)
+    - It was the same layout all down the page, the pagination was set to six, I spent a good few days trying to research and resolve this issue, on google, stackoverflow, slack all to no avail. I decided to leave the tablet view at 3 per page as it didnt look as squashed as I thought it would when designing the wireframes.
+    - Something to revisit in the future when my scope is a bit wider.
+    
     
 ## Deployment
 
