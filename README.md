@@ -89,6 +89,23 @@ was better for accessibility.
 ## Features
 
 ### Existing Features
+- **Home Page**
+    - The Home page has minimal content so it is not overcrowded for the user. The page has a navigation bar,
+    with the logo that will take you back to the home page, a blog button, to take any user to the blogs page,
+    When a user is not logged in there is a register button, and a Login button. On the tablet and mobile sizes the navigation bar collapses to a burger menu. There is a footer across the bottom of every page to indicate the end of the page.
+
+    ![Home page when user is not logged in](./assets/documentation/homepage-loggedout.png)
+    
+    - When a user is logged in the reister button on the navigation bar is changed to an Acoount button, which takes them to manage their blog page, the Login button becomes a Logout button, so the user knows their status.
+
+    ![Home page when user logged in](./assets/documentation/homepage-loggedin.png)
+
+- **Blog Page**
+    - Any user can enter the blog page, It is a showcase of all blogs.
+    - The Title, excerpt, author, date and time created on and the number of likes is visible on each blog.
+
+    ![Blog page](./assets/documentation/site-blogpage.png)
+
 
 ### Future Features
 
