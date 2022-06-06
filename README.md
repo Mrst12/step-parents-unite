@@ -156,11 +156,14 @@ was better for accessibility.
 
     ![delete modal](./assets/documentation/delete-modal.png)
 
-
-
-
-
 ### Future Features
+- The ability to sign in with social accounts like Facebook, Google etc.
+- Members can save blogs they like for easy access in the future.
+- The ability to tag other members in posts.
+- The ability to follow other users.
+- Include a forgotten password function to change or reset password.
+- Create a search bar to search for blogs containing a specific word or phrase.
+
 
 ## Technologies used
 
