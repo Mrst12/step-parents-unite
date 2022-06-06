@@ -128,6 +128,37 @@ was better for accessibility.
 
     ![logout modal](./assets/documentation/logout-modal.png)
 
+- **User Account/ Profile Page**
+    - Once the user is registered and logged in they have a user profile page.
+    - On the profile page they can Publish a blog, manage their blogs, or logout.
+
+    ![profile page](./assets/documentation/site-accountpage.png)
+
+- **Publish page**
+    - This page is where the user can publish their own page.
+    - Once approved the published blog will appear in the blog page.
+
+    ![publish blog](./assets/documentation/site-publishblog.png)
+
+- **Manage blog page**
+    - This page shows the user all of their blogs
+    - It displays the status of their blog either awaiting approval or published
+    
+    ![manage blogs](./assets/documentation/site-manageblogs.png)
+
+    - The user can edit their blogs from this page.
+    - The form is already pre populated to make it easier for the user.
+
+    ![edit blog](./assets/documentation/site-editblog.png)
+
+    - The user can also delete blogs from this page.
+    - The delete button will trigger a modal used as confirmation they do want to delete the blog.
+
+    ![delete modal](./assets/documentation/delete-modal.png)
+
+
+
+
 
 ### Future Features
 
