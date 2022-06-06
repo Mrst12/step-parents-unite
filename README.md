@@ -30,6 +30,7 @@ more difficult so I was hoping this page could bridge this gap.
     - [Future Features](#future-features)
 - [Technologies used](#technologies-used)
     - [Frameworks, Libraries & Tools Used](#frameworks-libraries--tools-used)
+    - [Resources](#resources)
 - [Testing](#testing)
 - [ Fixed Bugs](#fixed-bugs)
 - [Known Bugs](#known-bugs)
@@ -235,6 +236,14 @@ was better for accessibility.
     - Used for CSS testing
 - PEP8
     - Used for Python testing files
+
+### Resources
+- Code institute's Codestar Django Blog walktrough project, was used for the beginning development of my project,as it was the first time using the Django framework, It was very helpful for the initial setup.
+- I used the **Django documentation** to make sure I was heading in the right direction, and it helped with the configuration of my email settings on my registartion form.
+- Google for sorting out problems or to check my understanding.
+- stack overflow to fix reported bug
+- Code Institute's slack community for bugfixing and moral support.
+- Chrome Developer Tools for tweaking styling to make sure they were right.
     
 ## Testing
 - *Unit testing*, *Validator testing* and *User story testing* can all be found [here](/TESTING.md)
@@ -265,8 +274,8 @@ was better for accessibility.
     - It was the same layout all down the page, the pagination was set to six, I spent a good few days trying to research and resolve this issue, on google, stackoverflow, slack all to no avail. I decided to leave the tablet view at 3 per page as it didnt look as squashed as I thought it would when designing the wireframes.
     - Something to revisit in the future when my scope is a bit wider.
     
-    
 ## Deployment
+
 
 ## Credits
 
