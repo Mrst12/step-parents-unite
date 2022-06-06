@@ -235,10 +235,8 @@ was better for accessibility.
 - PEP8
     - Used for Python testing files
     
-
-
 ## Testing
-
+- *Unit testing*, *Validator testing* and *User story testing* can all be found [here](/TESTING.md)
 ## Bugs
 
 ## Deployment
