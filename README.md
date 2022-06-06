@@ -75,8 +75,16 @@ more difficult so I was hoping this page could bridge this gap.
 [Table for comment model database](./assets/wireframes/comments-model.pdf)
 
 ### Colour Scheme
+I used a range of colours that complimented each other, and a darker colour for the text so it 
+was better for accessibility.
+
+![Colour scheme used for site](./assets/documentation/colours-pp4.png)
+
+![Text colour](./assets/documentation/text-colour.png)
 
 ### Typography
+
+- I used Monserrat for the main title, and Catamaran for the rest of the text.
 
 ## Features
 
