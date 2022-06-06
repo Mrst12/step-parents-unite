@@ -31,7 +31,7 @@ more difficult so I was hoping this page could bridge this gap.
 - [Technologies used](#technologies-used)
     - [Frameworks, Libraries & Tools Used](#frameworks-libraries--tools-used)
 - [Testing](#testing)
-- [Bugs](#bugs)
+- [ Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
     - [Acknowledgements](#acknowledgements)
@@ -237,8 +237,26 @@ was better for accessibility.
     
 ## Testing
 - *Unit testing*, *Validator testing* and *User story testing* can all be found [here](/TESTING.md)
-## Bugs
+## Fixed Bugs
+- The bugs can be seen documented in my kanban development board in their own column [here](https://github.com/Mrst12/step-parents-unite/projects/1)
 
+- Heroku initial deployment
+    - I had an issue where I couldnt do a deployment to Heroku, it was not recognising the projects name.
+        - It was fixed by changing the filename in the Procfile from what I had put step-parents-unite to what it should of been step_parents_unite. It was then deployed to Heroku.
+- Submit not redirecting
+    - When a user wanted to comment on a blog they fill in the body and then click submit, this was redirecting to a page saying "This page is not working, contact the owner, error 405"
+        - To fix it I did a google search on error 405, which gave me an idea the problem was in my views.py file,
+        I had an indented block of code, the clue came from the problems tab on the terminal, sorted the indentation and the submit worked as it should.
+- White gap on footer
+    - My footer was not stretching across the whole page I had a white gap on the left hand side.
+        - Used developer tools to investigate the problem and found I had added a margin to the body which was causing the issue, restyled and it looked as it should.
+- Only one post on my blog page
+    - On my manage blog page it was only ever showing the last post that was put there.
+        Went through the blog file line by line to see if I could establish the problem, and found I had missed off a closing div element, added it in and the problem was resolved.
+- Trailing whitespace
+    - When doing the PEP8 testing on my views.py file I found [this error](./assets/documentation/pep8-views.py-bug.png)
+        - Did a google search for the problem and came up with [this article](stackoverflow.com/questions/21410075/what-is-trailing-whitespace-and-how-can-i-handle-this) implemented the changes and the error was gone.
+    
 ## Deployment
 
 ## Credits
