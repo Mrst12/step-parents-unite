@@ -43,6 +43,7 @@
 body {
     background-color: #ffd6ff;
     font-family: 'Catamaran', sans-serif;
+    overflow-x:hidden;
 }
 
 .main-bg {
