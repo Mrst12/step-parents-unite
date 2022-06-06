@@ -106,6 +106,16 @@ was better for accessibility.
 
     ![Blog page](./assets/documentation/site-blogpage.png)
 
+- **Blog-details Page**
+    - This page is accessible to any user.
+    - When the user is not logged in the can view the title, author, content of blog, time and date created, the number of likes and comments, and the comments made by others.
+
+    ![blog details not logged in](./assets/documentation/site-blogdetails-notloggedin.png)
+
+    - when the user is logged in they can view the same as other users but they have the ability to like a post, and to comment on the post.
+
+    ![blog details logged in](./assets/documentation/site-detailloggedin.png)
+
 
 ### Future Features
 
