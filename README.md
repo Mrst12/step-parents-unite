@@ -350,10 +350,13 @@ Heroku will now build the app for you. Once it has completed the build process y
 
 6. Type git clone, and then paste the URL you copied in Step 3.
 
-
-
-
-
 ## Credits
+- Code institute's Django blog walkthrough, was my initial confidence booster as that was the first time I had encountered the Django framework, so the walkthrough was used to help guide me through the initial setup.
+- Django3 by example was a book suggested to me which was helpful to show me how things should be laid out and setup.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/configuration.html) configuration of the email in the registration form.
 
 ### Acknowledgements
+- Code institute for course material and content.
+- Everybody on the slack community for their help and moral support.
+- My mentor for advise and assistance on planning and submission feedback.
+- My husband and children for their patience, support and understanding.
