@@ -116,6 +116,18 @@ was better for accessibility.
 
     ![blog details logged in](./assets/documentation/site-detailloggedin.png)
 
+- **Register page**
+    - Users can register for their own account.
+    - A registered user has access to more features such as liking and commenting on existing posts as well as publishing  and managing (edit/delete)their own blogs.
+
+    ![Register page](./assets/documentation/site-registerpage.png)
+
+- **Logout**
+    - When a user clicks the logout button form the menu or accounts page it triggers a logout modal.
+    - The logout modal is used for confirmation the user wants to logout out.
+
+    ![logout modal](./assets/documentation/logout-modal.png)
+
 
 ### Future Features
 
