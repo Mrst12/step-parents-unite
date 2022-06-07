@@ -14,7 +14,31 @@
 
 ## Unit Testing
 
+- I have used Django TestCase for automated testing for Views, and form files
+
 ### Testing Views
+- Tested views to see if they are functioning as expected and returns the page the user needs to be at.
+    
+- Home page
+
+![testing home page views](./assets/documentation/indexpage-test.png)
+
+
+- Blog page
+
+![testing blog page views](./assets/documentation/blogpage-test.png)
+
+- Profile Page
+
+![testing for profile page views](./assets/documentation/profilepage-test.png)
+
+- Publishing Blogs Page
+
+![testing for publishing blog views](./assets/documentation/publishpage-test.png)
+
+Result :
+
+![result for views tests](./assets/documentation/test-for-views-result.png)
 
 ### Testing Forms
 
