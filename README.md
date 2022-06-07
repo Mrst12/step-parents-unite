@@ -2,8 +2,6 @@
 
 [view the live site here](https://step-parents-unite.herokuapp.com/)
 
-[View the GitHub repository here](https://github.com/Mrst12/step-parents-unite)
-
 ## Introduction
 Step Parents Unite is a blog website designed for step families to chat and support
 each other with the ups and downs of either just step children or blended families.
