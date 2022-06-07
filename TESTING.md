@@ -59,6 +59,18 @@ Result:
 
 ### Lighthouse Test
 
+- Lighthouse result for desktop
+
+![lighthouse report desktop](./assets/documentation/lighthouse-score.png)
+
+- Lighthose only gave a score of 92 for best practice, this was a problem beyond my scope at the moment
+
+![lighthouse low score](./assets/documentation/lighthouse-testproblem.png)
+
+- Lighthouse result for mobile
+
+![lighthouse result for mobile](./assets/documentation/lighthouse-mobile.png)
+
 ### W3C Markup Validation
 
 ### W3C CSS Validation
