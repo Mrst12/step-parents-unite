@@ -107,6 +107,10 @@ Result:
 
 ### W3C CSS Validation
 
+- No errors or warnings found
+
+![Css validation test](./assets/documentation/css-check.png)
+
 ### PEP8 validation
 
 ## User Story Testing
