@@ -14,7 +14,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
+    content = models.TextField(blank=False)
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -41,7 +41,7 @@ class Comment(models.Model):
         Post, on_delete=models.CASCADE, related_name='comments')
     author = models.CharField(max_length=80)
     email = models.EmailField()
-    body = models.TextField()
+    body = models.TextField(blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
