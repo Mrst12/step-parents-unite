@@ -112,6 +112,55 @@ Result:
 ![Css validation test](./assets/documentation/css-check.png)
 
 ### PEP8 validation
+- There was only one error found in the views, documented it in the bugs section on the Readme document. It was resolved and then passed the tests.
+
+- Unit testing for forms
+
+![unit testing for forms](./assets/documentation/unittest-forms.png)
+
+- Unit testing for views
+
+![Unit testing for views](./assets/documentation/unittest-views.png)
+
+- blog app urls
+
+![blog app urls](./assets/documentation/blogapp-urls.png)
+
+- admin.py
+
+![admin.py pep8](./assets/documentation/pep8-admin.py.png)
+
+- apps.py
+
+![apps.py pep8](./assets/documentation/pep8-apps.py.png)
+
+- asgi.py
+
+![asgi.py pep8](./assets/documentation/pep8-asgi.py.png)
+
+- forms.py
+
+![forms.py pep8](./assets/documentation/pep8-forms.py.png)
+
+- models.py
+
+![models.py pep8](./assets/documentation/pep8-models.py.png)
+
+- project url.py
+
+![project url pep8](./assets/documentation/pep8-projecturl.png)
+
+- views.py bug
+
+![views.py bug pep8](./assets/documentation/pep8-views.py-bug.png)
+
+- views.py resolved
+
+![views.py resolved pep8](./assets/documentation/pep8-views.py.png)
+
+- wsgi.py
+
+![wsgi.py pep8](./assets/documentation/pep8-wsgi.py.png)
 
 ## User Story Testing
 
