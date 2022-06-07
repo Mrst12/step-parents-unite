@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <a href="{% url 'blog_details' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt|truncatewords:100 }}</p>
+                                <p class="card-text">{{ post.excerpt|truncatewords_html:100 }}</p>
                             </a>
                             <hr />
                             <div class="image-flash">
