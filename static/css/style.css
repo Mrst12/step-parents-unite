@@ -160,6 +160,7 @@ a.link {
 
 .card-text {
     padding: 10px;
+    white-space: pre-wrap;
 }
 .comment {
     background-color: #bbd0ff;
