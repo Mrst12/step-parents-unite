@@ -11,6 +11,7 @@
     - [Admin](#admin)
     - [General User](#general-user)
     - [Member User](#member-user)
+- [Final testing](#final-testing)
 
 ## Unit Testing
 
@@ -203,3 +204,5 @@ Result:
 
 ![blog detail page](./assets/documentation/site-detailloggedin.png)
 
+## Final testing
+- All pages have been tested on desktop, tablet, and mobile, links and buttons have been tested and appear satisfactory.
