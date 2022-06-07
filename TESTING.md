@@ -73,6 +73,38 @@ Result:
 
 ### W3C Markup Validation
 
+- Home page
+
+![home page HTML test](./assets/documentation/html-indexpage.png)
+
+- Blog page
+
+![blog page HTML test](./assets/documentation/html-blogpage.png)
+
+- Blog detail page
+
+![blog-detail page HTML test](./assets/documentation/html-blogdetail-page.png)
+
+- Register Page
+
+![register page HTML test](./assets/documentation/html-registerpage.png)
+
+- Login Page
+
+![login page HTML test](./assets/documentation/html-loginpage.png)
+
+- My Blogs Page
+
+![My blogs page HTML test](./assets/documentation/html-myblogspage.png)
+
+- Profile page
+
+![Profile page HTML test](./assets/documentation/html-profilepage.png)
+
+- Publish page
+
+![publish page HTML test](./assets/documentation/html-publishpage.png)
+
 ### W3C CSS Validation
 
 ### PEP8 validation
