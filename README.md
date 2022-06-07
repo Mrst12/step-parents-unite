@@ -165,6 +165,11 @@ was better for accessibility.
 
     ![delete modal](./assets/documentation/delete-modal.png)
 
+- **Comments**
+- Throughout the site there is comments that is displayed so a user knows things have happened like logging out, or form submitted to admin.
+
+![comment](./assets/documentation/comment-spu.png)
+
 ### Future Features
 - The ability to sign in with social accounts like Facebook, Google etc.
 - Members can save blogs they like for easy access in the future.
