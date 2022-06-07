@@ -41,6 +41,19 @@ Result :
 ![result for views tests](./assets/documentation/test-for-views-result.png)
 
 ### Testing Forms
+- Tested forms for comment form and blog form to make sure fields are expected and the form is submitted to where it should be.
+
+- Testing blogform
+
+![test for blogform](./assets/documentation/test-blogform.png)
+
+- Testing Comment forms
+
+![tests for comment form](./assets/documentation/test-commentform.png)
+
+Result:
+
+![result for form tests](./assets/documentation/formstests-results.png)
 
 ## Validator Testing
 
