@@ -165,7 +165,9 @@ a.link {
 .comment {
     background-color: #bbd0ff;
 }
-
+.alert {
+    margin-bottom: 0;
+}
 /*blog detail page */
 .col-1 {
     width: 50%;
