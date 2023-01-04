@@ -1,1 +1,0 @@
-web: gunicorn step_parents_unite.wsgi
