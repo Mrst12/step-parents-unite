@@ -1,6 +1,6 @@
 # Step Parents Unite
 
-[view the live site here](https://step-parents-unite.herokuapp.com/)
+[view the live site here](https://step-parents-unite.onrender.com)
 
 ## Introduction
 Step Parents Unite is a blog website designed for step families to chat and support
